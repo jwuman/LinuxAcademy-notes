@@ -6,12 +6,12 @@ Completed
 3. Helm Deep Dive (9/8/2019)
 
 In Progress
-1. Kubernetes The Hard Way
+1. Kubernetes The Hard Way (started 9/2/2019)
+2. Service Mesh with Istio (started 9/8/2019)
 
 Planned
-1. Service Mesh with Istio
+1. Implementing a Full CI/CD Pipeline
 2. Kubernetes Seurity (Advanced Concepts)
 3. CloudNative Certified Kubernetes Administrator (CKA)
 4. Monitoring Kubernetes with Prometheus
 5. Microservice Applications in Kubernetes
-6. Implementing a Full CI/CD Pipeline
