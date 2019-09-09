@@ -42,7 +42,7 @@ helm create NAME (create a helm chart directory structure)
 
 ex: helm create custom
 
-```tree
+```console
 custom
 ├── charts
 ├── Chart.yaml (meta data; version; descritpion)
