@@ -8,7 +8,7 @@ tiller: server-component
 ### Install binary
 
 Install from the instructions on the github page
-https://github.com/helm/helm/blob/master/docs/install.md
+<https://github.com/helm/helm/blob/master/docs/install.md>
 
 ### Initialize the environment
 
@@ -42,7 +42,7 @@ helm create NAME (create a helm chart directory structure)
 
 ex: helm create custom
 
-```
+```tree
 custom
 ├── charts
 ├── Chart.yaml (meta data; version; descritpion)
