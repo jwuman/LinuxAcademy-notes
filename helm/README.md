@@ -1,7 +1,16 @@
 # Helm Deep Dive
 
+## Install helm/tiller
+
 helm: client
 tiller: server-component
+
+### Install binary
+
+Install from the instructions on the github page
+https://github.com/helm/helm/blob/master/docs/install.md
+
+### Initialize the environment
 
 helm init (initial helm on the local server)
 
@@ -11,7 +20,8 @@ helm repo list (list the current helm repos)
 
 helm repo add CHART_NAME URL (the URL must contain a file index.yaml)
 
-To build from source
+### To build from source
+
 github repo <https://github.com/helm/helm>
 make sure go and glide are installed\
 
@@ -25,7 +35,7 @@ Add the necessary kubernetes access
 
 `kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'`
 
-Create your own chart
+## Create your own chart
 
 helm create NAME (create a helm chart directory structure)
 
