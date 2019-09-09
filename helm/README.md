@@ -68,3 +68,55 @@ helm repo
 ### Install Charts to Kubernetes
 
 helm install LOCAL_DIR or from a repo (ex: helm install ./mychart; helm install stable/wordpress)
+
+### LAB: Using Helm Charts
+
+helm search wordpress
+
+helm fetch --untar stable/wordpress
+
+cd wordpress
+
+change persistence from enabled: true to enabled: false in values.yaml (two places: wordpress/mariadb)
+change service type to NodePort and http port to 30080
+
+helm install wordpress
+
+helm ls --short
+
+helm delete <RELEASE_NAME>
+
+helm ls
+
+kubectl get pv
+
+kubectl get pvc
+
+### LAB: Creating a Release in Helm
+
+cd nginx
+change the index.html to a different msg
+change service type to NodePort and change the nodePort to 30080
+
+change the version to 0.2.0 in Charts.yaml
+
+helm install nginx
+
+helm ls --short
+
+helm history <RELEASE_NAME>
+
+change the index.html to something else
+change version to 0.3.0 in Charts.yaml
+
+helm ls --short
+
+helm upgrade <RELEASE_NAME> nginx
+
+helm history <RELEASE_NAME>
+
+helm ls --short
+
+helm rollback <RELEASE_NAME> 1
+
+helm history <RELEASE_NAME>
