@@ -58,3 +58,13 @@ custom
 ```
 
 helm fetch BRANCH/NAME (download the chartin tar.gz; with --untar will expand the archive)
+
+helm index
+
+helm package
+
+helm repo
+
+### Install Charts to Kubernetes
+
+helm install LOCAL_DIR or from a repo (ex: helm install ./mychart; helm install stable/wordpress)

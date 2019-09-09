@@ -18,3 +18,4 @@ Planned
 3. CloudNative Certified Kubernetes Administrator (CKA)
 4. Monitoring Kubernetes with Prometheus
 5. Microservice Applications in Kubernetes
+6. Serverless Concepts
