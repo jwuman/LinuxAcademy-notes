@@ -1,6 +1,6 @@
 # Service Mesh with Istio
 
-What can Istio do? It controls traffic between pods that does rate limiting, firewall rules, monitoring, logging and also authentication/authorization and encryption within kubernetes. 
+What can Istio do? It controls traffic between pods that does rate limiting, firewall rules, monitoring, logging and also authentication/authorization and encryption within kubernetes.
 
 ## Istio components
 
@@ -36,4 +36,4 @@ Mixer(control plane api)
 
 ## How Istio does its job
 
-Ingress <-> pod1[svc1,*proxy] <-> 
+Ingress <-> pod1[svc1,*proxy] <->
